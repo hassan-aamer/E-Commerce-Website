@@ -129,3 +129,83 @@ header{
 .btn:hover{
     background: var(--main-light-color);
 }
+.headind{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.headind span {
+    border-bottom: 3px solid var(--main-color);
+}
+.featured-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+.featured-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+}
+.featured-container .box img{
+    width: 180px;
+    object-fit: contain;
+    object-position: center;
+}
+.featured-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.featured-container .box .text h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.featured-container .box .text a{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.shop-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 2rem;
+}
+.shop-container .box{
+    position: relative;
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+}
+.shop-container .box img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    background: var(--container-color);
+    border-radius: 0.5rem;
+}
+.shop-container .box h2{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.shop-container .box span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.shop-container .box .bx{
+    position: absolute;
+    bottom: 1rem;
+    right: 0.8rem;
+    padding: 10px;
+    font-size: 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+}
+.shop-container .box .bx:hover{
+    background: var(--main-light-color);
+}
