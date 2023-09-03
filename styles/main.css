@@ -18,6 +18,14 @@
     --text-color: #1a1d22;
     --bg-color: #fff;
 }
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #574040;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background: var(--text-color);
+}
 img{
     width: 100%;
 }
@@ -39,6 +47,11 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
+}
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 2px 2px 4px rgb(15 54 55 / 10%);
+    transition: 0.5s;
 }
 .nav{
     display: flex;
@@ -99,7 +112,7 @@ header{
 }
 /* Home */
 .home{
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
     min-height: 640px;
     display: flex;
@@ -136,6 +149,7 @@ header{
 .headind span {
     border-bottom: 3px solid var(--main-color);
 }
+/* Featured */
 .featured-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
@@ -168,6 +182,7 @@ header{
     font-size: 0.9rem;
     color: var(--text-color);
 }
+/* Shop */
 .shop-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
@@ -208,4 +223,88 @@ header{
 }
 .shop-container .box .bx:hover{
     background: var(--main-light-color);
+}
+/* News Letter */
+.newsletter{
+    display: grid;
+    justify-items: center;
+}
+.newsletter form{
+    margin-top: 2rem;
+    display: flex;
+    background: var(--container-color);
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+.newsletter form .email-box{
+    width: 250px;
+}
+.newsletter form input{
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.newsletter form  .btn{
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.newsletter form  .btn:hover{
+    background: var(--main-light-color);
+}
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.footer .logo{
+    margin-bottom: 1rem;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social a{
+    font-size: 24px;
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+.social a:hover{
+    transform: translateY(-4px);
+    transition: 0.4s;
+}
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.footer-box a,
+.footer-box p{
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.footer-box a:hover{
+    color: var(--main-color);
+}
+/* Copy Right */
+.copyright{
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.copyright a {
+    color: black;
+}
+.copyright a:hover{
+    color: var(--main-color);
 }

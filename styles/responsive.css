@@ -1,0 +1,95 @@
+/* Making Responsive */
+@media (max-width: 1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 991px){
+    .nav{
+        padding: 15px 20px;
+    }
+    section{
+        padding: 3rem 0 1em;
+    }
+    .home-text h1{
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 768px){
+    .nav{
+        padding: 10px 0;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: beige;
+        row-gap: 0.5rem;
+        text-align: left;
+        box-shadow: 2px 2px 15px rgb(15 54 55 / 10%);
+        transition: 0.3s;
+    }
+    .navbar a{
+        display: block;
+        padding: 15px;
+    }
+    .navbar.active{
+        right: 0;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .heading h2{
+        font-size: 1.4rem;
+    }
+    .shop-container{
+        grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    }
+}
+@media (max-width: 672px){
+    .home-container{
+        grid-template-columns: 1fr;
+    }
+    .home-text{
+        order: 2;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    }
+    .newsletter form .email-box{
+        width: 180px;
+    }
+}
+@media (max-width: 360px){
+    .logo img{
+        width: 54px;
+    }
+    .nav-icons .bx{
+        font-size: 20px;
+    }
+    .home-text p br{
+        display: contents;
+    }
+    .heading h2{
+        font-size: 1.2rem;
+    }
+    .featured-container .box img{
+        width: 135px;
+    }
+    .newsletter form .email-box{
+        width: 140px;
+        font-size: 0.9rem;
+    }
+    .btn{
+        padding: 14px 20px;
+    }
+}
